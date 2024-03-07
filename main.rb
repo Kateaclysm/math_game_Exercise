@@ -16,7 +16,7 @@ while !game.game_end?
   puts "#{game.current_player.name}, #{current_question.ask_question}"
 
   # => Ask for an answer using command line:
-  player_answer = gets.chomp.to_i
+  player_answer = gets.chomp.to_i #=> The to_i is to make sure the input is an integer type.
   
   # => Check if answer is correct, update lives.
   game.current_player.answer_question(player_answer, current_question)
